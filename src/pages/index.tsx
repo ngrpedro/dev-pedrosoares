@@ -1,3 +1,9 @@
+import Hero from "@/components/homeSections/hero";
+import NewsLetter from "@/components/homeSections/newsLetter";
+import Projects from "@/components/homeSections/projects";
+import PurposeCards from "@/components/homeSections/purposeCards";
+import SplitSection from "@/components/homeSections/splitSection";
+import Testimonials from "@/components/homeSections/testionails";
 import Head from "next/head";
 
 export default function Home() {
@@ -9,9 +15,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo-mini.svg" />
       </Head>
-      <div>
-        <h1 className="text-4xl">hello word</h1>
-      </div>
+      <>
+        <Hero />
+        <PurposeCards />
+        <SplitSection />
+        <Projects />
+        <Testimonials />
+        <NewsLetter />
+      </>
     </>
   );
 }
