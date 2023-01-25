@@ -14,8 +14,8 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
-  Image,
 } from "@chakra-ui/react";
+import Image from 'next/image'
 import {
   HamburgerIcon,
   CloseIcon,
@@ -23,7 +23,7 @@ import {
   ChevronRightIcon,
   PhoneIcon,
 } from "@chakra-ui/icons";
-import logo from "../../assets/mini_logo.png";
+import logo from "@/assets/mini_logo.png";
 
 const NAV_ITEMS: Array<NavItem> = [
   {
@@ -97,7 +97,7 @@ export default function NavBar() {
 
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Box boxSize="10">
-            <Image /* src={logo} */ alt="Dan Abramov" />
+            <Image src={logo} alt="Dan Abramov" />
           </Box>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>

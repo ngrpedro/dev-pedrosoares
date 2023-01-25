@@ -7,13 +7,12 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
-  Image,
   Heading,
   Flex,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
-
-import logo from "../../assets/mini_logo.png";
+import Image from 'next/image'
+import logo from "@/assets/mini_logo.png";
 import { FacebookLogo, InstagramLogo, TwitterLogo } from "phosphor-react";
 
 const Logo = (props: any) => {
@@ -25,7 +24,7 @@ const Logo = (props: any) => {
       fontWeight={900}
     >
       <Box boxSize="10">
-        <Image /* src={logo} */ alt="Dan Abramov" />
+        <Image src={logo} alt="Pedro soares" />
       </Box>
       <p className="font-poppins sm:text-xl md:text-2xl">Pedro Soares</p>
     </Flex>

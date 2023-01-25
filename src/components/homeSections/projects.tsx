@@ -1,4 +1,5 @@
-import { Box, Card, Flex, Grid, Image } from "@chakra-ui/react";
+import { Box, Card, Flex, Grid } from "@chakra-ui/react";
+import Image from "next/image";
 import better from "@/assets/cases/BetterMarketing.png";
 import green from "@/assets/cases/Green.png";
 import lotus from "@/assets/cases/Lotus.png";
@@ -17,21 +18,21 @@ const Projects = () => {
       >
         <Box m="auto">
           <Image
-            /* src={green} */
+            src={green}
             alt="mockup"
             className="rounded-md rotate-[-8deg] hover:rotate-[-4deg] transition-all"
           />
         </Box>
         <Box m="auto">
           <Image
-            /*  src={lotus} */
+            src={lotus}
             alt="mockup"
             className="rounded-md rotate-[8deg] hover:rotate-[4deg] transition-all"
           />
         </Box>
         <Box m="auto">
           <Image
-            /* src={better} */
+            src={better}
             alt="mockup"
             className="rounded-md rotate-[-3deg] hover:rotate-[0deg] transition-all"
           />

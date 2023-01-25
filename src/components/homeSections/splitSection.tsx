@@ -2,12 +2,12 @@ import {
   Button,
   Flex,
   Heading,
-  Image,
   Stack,
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import split from "../../assets/splitSection.jpg";
+import split from "@/assets/splitSection.jpg";
+import Image from "next/image";
 
 export default function SplitSection() {
   return (
@@ -74,9 +74,8 @@ export default function SplitSection() {
       <Flex flex={1}>
         <Image
           alt={"Login Image"}
-          objectFit={"cover"}
-          /* src={split} */
-          rounded="md"
+          src={split}
+          className="rounded-md"
         />
       </Flex>
     </Stack>
