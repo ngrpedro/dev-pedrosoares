@@ -25,6 +25,7 @@ import {
   LinkedinLogo,
   WhatsappLogo,
 } from "phosphor-react";
+import Head from "next/head";
 
 interface Props {
   color: string;
@@ -33,6 +34,11 @@ interface Props {
 
 export default function About() {
   return (
+    <>
+    <Head>
+      <title>Pedro Soares | Sobre</title>
+      <link rel="icon" href="/logo-mini.svg" />
+    </Head>
     <Grid
       templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
       gap={"4"}
@@ -205,6 +211,8 @@ export default function About() {
         </Box>
       </GridItem>
     </Grid>
+    </>
+
   );
 }
 
